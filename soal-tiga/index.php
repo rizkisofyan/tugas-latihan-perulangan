@@ -16,7 +16,7 @@
 
         <div style="margin-top: 15px;">
             <?php if(isset($_POST['submit'])) :  ?>
-                <?php for($i = 1; $i <= $_POST['bilangan']; $i++) : ?>
+                <?php for($i = $_POST['bilangan']; $i >= 1; $i--) : ?>
                     <?php for($j = $_POST['bilangan']; $j >= $i; $j--) : ?>
                         <?= "$j "?>
                     <?php endfor?>
